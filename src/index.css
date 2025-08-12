@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./assets/fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./assets/fonts/NeueMontreal-Light.otf') format('opentype');
+  font-weight: 300;
+  /* 👈 Light font ka weight */
+  font-style: normal;
+}
+
+
+/* Founders Grotesk Bold */
+@font-face {
+  font-family: 'FoundersGrotesk';
+  src: url('./assets/fonts/FoundersGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: azure;
+}
+
+.expense-list> :first-child {
+  margin-top: 20px;
+}
+
+.childCom > :last-child {
+  border-bottom: none;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
