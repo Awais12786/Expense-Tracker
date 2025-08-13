@@ -14,8 +14,14 @@ const ExpenseForm = ({ onAddExpense }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Title:", expenseTitle);
-    console.log("Amount:", amount);
+    if (expenseTitle.trim() === "") {
+      alert("Please enter a valid title");
+      return;
+    }
+    if (amount.trim() === "" || isNaN(amount) || Number(amount) <= 0) {
+      alert("Please enter a valid amount");
+      return;
+    }
     const expenseData = {
       title: expenseTitle,
       amount: +amount,
